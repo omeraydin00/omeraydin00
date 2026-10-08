@@ -71,12 +71,8 @@ I'm a software engineer working where **mobile, web and hardware** meet. At **Ok
 
 ---
 
-### 📊 GitHub stats
+### 📊 Contributions
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=omeraydin00&show_icons=true&hide_rank=true&count_private=true&hide_border=true&bg_color=2B1810&title_color=E8B98A&text_color=F5E6D3&icon_color=E8B98A&border_radius=12" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omeraydin00&layout=compact&langs_count=8&hide_border=true&bg_color=2B1810&title_color=E8B98A&text_color=F5E6D3&border_radius=12" alt="Top languages" />
-</p>
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=omeraydin00&hide_border=true&border_radius=12&background=2B1810&ring=E8B98A&fire=E8B98A&currStreakLabel=E8B98A&sideLabels=F5E6D3&currStreakNum=F5E6D3&sideNums=F5E6D3&dates=C9AE95&stroke=5C3526" alt="GitHub streak" />
 </p>
