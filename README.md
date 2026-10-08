@@ -65,7 +65,7 @@ I'm a software engineer working where **mobile, web and hardware** meet. At **Ok
 | Project | What it does | Stack |
 |---|---|---|
 | [**PolicyGPT**](https://github.com/omeraydin00/PolicyGPT) | Turns government-procedure documents into interactive step-by-step guides with a local RAG pipeline | Ollama · LangChain · Flask |
-| [**VoiceGPT**](https://github.com/omeraydin00/VoiceGPT) | Fully offline Turkish voice assistant: speech to text, local LLM answer, spoken reply | Whisper · Llama 3 · Gradio |
+| [**VoiceGPT**](https://github.com/omeraydin00/VoiceGPT) | Turkish voice assistant with local speech recognition and a local LLM, plus spoken replies | Whisper · Llama 3 · Gradio |
 | [**Customer Support Agent**](https://github.com/omeraydin00/customer-support-agent) | Local LLM support assistant with intent detection, sentiment analysis and auto-replies | Python · Streamlit · Ollama |
 | [**Ollama-Agent-Kit**](https://github.com/EmreMutlu99/Ollama-Agent-Kit) | Memory-enabled LLM agent with tool calling, built during my internship at Sagel AI | Node.js · Ollama |
 
