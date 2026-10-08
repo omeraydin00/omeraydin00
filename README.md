@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/omerayd%C4%B1n/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://leviverleihtflugel.vercel.app"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://omerfarukaydin.vercel.app"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
   <a href="https://okkalikahve.com.tr"><img src="https://img.shields.io/badge/Okkal%C4%B1%20Kahve-30363D?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Okkalı Kahve" /></a>
 </p>
 
