@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Ömer Faruk Aydın, Software Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F120C"/>
+      <stop offset="0.55" stop-color="#3D2418"/>
+      <stop offset="1" stop-color="#6B4129"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.55" r="0.45">
+      <stop offset="0" stop-color="#E8B98A" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#E8B98A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF3EA"/>
+      <stop offset="1" stop-color="#E9D6C2"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4A2A1A"/>
+      <stop offset="1" stop-color="#7A4A2E"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="320" rx="22"/></clipPath>
+    <g id="bean">
+      <ellipse cx="0" cy="0" rx="13" ry="9" fill="#8B5A3C"/>
+      <path d="M-11 1 C -4 -5, 4 6, 11 -1" stroke="#3D2418" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+    <style>
+      .name   { font: 700 56px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #F8EDE1; letter-spacing: -0.5px; }
+      .hello  { font: 500 22px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #D9B896; letter-spacing: 3px; }
+      .role   { font: 600 28px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #E8B98A; }
+      .meta   { font: 400 18px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #C9AE95; letter-spacing: 0.5px; }
+
+      .fade-in { opacity: 0; animation: fadeUp 0.9s ease-out forwards; }
+      .d1 { animation-delay: 0.1s; } .d2 { animation-delay: 0.35s; } .d3 { animation-delay: 0.6s; }
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+      .r { opacity: 0; animation: rotate 12s infinite; }
+      .r1 { animation-delay: 0.8s; } .r2 { animation-delay: 4.8s; } .r3 { animation-delay: 8.8s; }
+      @keyframes rotate {
+        0%   { opacity: 0; transform: translateY(14px); }
+        5%   { opacity: 1; transform: translateY(0); }
+        28%  { opacity: 1; transform: translateY(0); }
+        33%  { opacity: 0; transform: translateY(-14px); }
+        100% { opacity: 0; transform: translateY(-14px); }
+      }
+      .cursor { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+
+      .steam { fill: none; stroke: #F8EDE1; stroke-width: 6; stroke-linecap: round; opacity: 0; animation: steam 3.6s ease-in-out infinite; }
+      .s2 { animation-delay: 1.2s; } .s3 { animation-delay: 2.4s; }
+      @keyframes steam {
+        0%   { opacity: 0; transform: translateY(14px); }
+        30%  { opacity: 0.55; }
+        100% { opacity: 0; transform: translateY(-34px); }
+      }
+
+      .float { animation: float 6s ease-in-out infinite; }
+      .f2 { animation-delay: 1.5s; } .f3 { animation-delay: 3s; } .f4 { animation-delay: 4.5s; }
+      @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-12px) rotate(12deg); } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#glow)"/>
+
+    <!-- floating beans -->
+    <g opacity="0.55">
+      <g transform="translate(700 62)"><g class="float"><use href="#bean"/></g></g>
+      <g transform="translate(1135 70) scale(0.8)"><g class="float f2"><use href="#bean"/></g></g>
+      <g transform="translate(1110 262) scale(1.1)"><g class="float f3"><use href="#bean"/></g></g>
+      <g transform="translate(735 268) scale(0.7)"><g class="float f4"><use href="#bean"/></g></g>
+      <g transform="translate(610 150) scale(0.6)"><g class="float f3"><use href="#bean"/></g></g>
+    </g>
+
+    <!-- text -->
+    <text x="72" y="92" class="hello fade-in d1">HI THERE, I'M</text>
+    <text x="70" y="156" class="name fade-in d2">Ömer Faruk Aydın</text>
+
+    <g transform="translate(72 206)">
+      <text class="role r r1">Software Engineer at Okkalı Kahve</text>
+      <text class="role r r2">Mobile · Web · IoT Systems</text>
+      <text class="role r r3">React Native · Next.js · Node.js</text>
+    </g>
+    <rect x="72" y="222" width="56" height="4" rx="2" fill="#E8B98A" class="fade-in d3"/>
+    <text x="72" y="262" class="meta fade-in d3">Istanbul, Türkiye  ·  Building software from the app to the hardware</text>
+
+    <!-- coffee cup -->
+    <g transform="translate(905 108)">
+      <path class="steam"    d="M38 20 C 26 2, 50 -10, 38 -28"/>
+      <path class="steam s2" d="M78 18 C 66 0, 90 -12, 78 -30"/>
+      <path class="steam s3" d="M118 20 C 106 2, 130 -10, 118 -28"/>
+
+      <ellipse cx="80" cy="168" rx="128" ry="18" fill="#000" opacity="0.25"/>
+      <ellipse cx="80" cy="160" rx="120" ry="16" fill="#D9C2AA"/>
+      <ellipse cx="80" cy="156" rx="108" ry="12" fill="#F3E6D8"/>
+      <path d="M156 66 C 206 66, 206 128, 150 128" fill="none" stroke="#EFE0D0" stroke-width="16" stroke-linecap="round"/>
+      <path d="M0 40 L160 40 L148 128 C 144 150, 16 150, 12 128 Z" fill="url(#cup)"/>
+      <ellipse cx="80" cy="40" rx="80" ry="14" fill="#F8EDE1"/>
+      <ellipse cx="80" cy="42" rx="70" ry="10" fill="url(#coffee)"/>
+      <path d="M36 44 C 60 38, 100 38, 124 44" stroke="#C99A6E" stroke-width="2.5" fill="none" opacity="0.7" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
