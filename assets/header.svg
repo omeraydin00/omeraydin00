@@ -112,31 +112,31 @@
     <g>
     <path d="M930 160 L770 70" stroke="#30363D" stroke-width="2"/>
     <path d="M930 160 L770 70" class="flow" stroke="#58A6FF" stroke-width="2" style="animation-delay:0.0s"/>
-    <circle r="4" fill="#79C0FF">
+    <circle r="4" fill="#79C0FF" opacity="0">
       <animateMotion dur="2.4s" begin="0.0s" repeatCount="indefinite" path="M930 160 L770 70" keyPoints="1;0" keyTimes="0;1" calcMode="linear"/>
       <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="0.0s" repeatCount="indefinite"/>
     </circle>
-    <circle r="3" fill="#D2A8FF">
+    <circle r="3" fill="#D2A8FF" opacity="0">
       <animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M930 160 L770 70"/>
       <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
     </circle>
     <path d="M930 160 L1090 70" stroke="#30363D" stroke-width="2"/>
     <path d="M930 160 L1090 70" class="flow" stroke="#58A6FF" stroke-width="2" style="animation-delay:0.4s"/>
-    <circle r="4" fill="#79C0FF">
+    <circle r="4" fill="#79C0FF" opacity="0">
       <animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite" path="M930 160 L1090 70" keyPoints="1;0" keyTimes="0;1" calcMode="linear"/>
       <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
     </circle>
-    <circle r="3" fill="#D2A8FF">
+    <circle r="3" fill="#D2A8FF" opacity="0">
       <animateMotion dur="2.4s" begin="2.0s" repeatCount="indefinite" path="M930 160 L1090 70"/>
       <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="2.0s" repeatCount="indefinite"/>
     </circle>
     <path d="M930 160 L930 262" stroke="#30363D" stroke-width="2"/>
     <path d="M930 160 L930 262" class="flow" stroke="#58A6FF" stroke-width="2" style="animation-delay:0.8s"/>
-    <circle r="4" fill="#79C0FF">
+    <circle r="4" fill="#79C0FF" opacity="0">
       <animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite" path="M930 160 L930 262" keyPoints="1;0" keyTimes="0;1" calcMode="linear"/>
       <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
     </circle>
-    <circle r="3" fill="#D2A8FF">
+    <circle r="3" fill="#D2A8FF" opacity="0">
       <animateMotion dur="2.4s" begin="2.8s" repeatCount="indefinite" path="M930 160 L930 262"/>
       <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="2.8s" repeatCount="indefinite"/>
     </circle>
