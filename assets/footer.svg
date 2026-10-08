@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="">
+  <defs>
+    <style>
+      .a { animation: drift 9s linear infinite; }
+      .b { animation: drift 14s linear infinite; }
+      @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-600px); } }
+    </style>
+  </defs>
+  <g class="b" opacity="0.4"><path fill="#6B4129" d="M0 64 Q 150 42, 300 64 Q 450 86, 600 64 Q 750 42, 900 64 Q 1050 86, 1200 64 Q 1350 42, 1500 64 Q 1650 86, 1800 64 Q 1950 42, 2100 64 Q 2250 86, 2400 64 L2400 120 L0 120 Z"/></g>
+  <g class="a" opacity="0.7"><path fill="#4A2A1A" d="M0 80 Q 150 96, 300 80 Q 450 64, 600 80 Q 750 96, 900 80 Q 1050 64, 1200 80 Q 1350 96, 1500 80 Q 1650 64, 1800 80 Q 1950 96, 2100 80 Q 2250 64, 2400 80 L2400 120 L0 120 Z"/></g>
+  <rect y="104" width="1200" height="16" fill="#2B1810"/>
+  <g class="a"><path fill="#2B1810" d="M0 96 Q 150 86, 300 96 Q 450 106, 600 96 Q 750 86, 900 96 Q 1050 106, 1200 96 Q 1350 86, 1500 96 Q 1650 106, 1800 96 Q 1950 86, 2100 96 Q 2250 106, 2400 96 L2400 120 L0 120 Z"/></g>
+</svg>
