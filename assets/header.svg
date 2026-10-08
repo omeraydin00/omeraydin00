@@ -1,102 +1,164 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Ömer Faruk Aydın, Software Engineer">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1F120C"/>
-      <stop offset="0.55" stop-color="#3D2418"/>
-      <stop offset="1" stop-color="#6B4129"/>
+      <stop offset="0" stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#161B22"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.78" cy="0.55" r="0.45">
-      <stop offset="0" stop-color="#E8B98A" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#E8B98A" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0.78" cy="0.5" r="0.42">
+      <stop offset="0" stop-color="#1F6FEB" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#1F6FEB" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FBF3EA"/>
-      <stop offset="1" stop-color="#E9D6C2"/>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58A6FF"/>
+      <stop offset="1" stop-color="#BC8CFF"/>
     </linearGradient>
-    <linearGradient id="coffee" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4A2A1A"/>
-      <stop offset="1" stop-color="#7A4A2E"/>
-    </linearGradient>
-    <clipPath id="frame"><rect width="1200" height="320" rx="22"/></clipPath>
-    <g id="bean">
-      <ellipse cx="0" cy="0" rx="13" ry="9" fill="#8B5A3C"/>
-      <path d="M-11 1 C -4 -5, 4 6, 11 -1" stroke="#3D2418" stroke-width="2" fill="none" stroke-linecap="round"/>
-    </g>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#8B949E" opacity="0.18"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="320" rx="16"/></clipPath>
     <style>
-      .name   { font: 700 56px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #F8EDE1; letter-spacing: -0.5px; }
-      .hello  { font: 500 22px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #D9B896; letter-spacing: 3px; }
-      .role   { font: 600 28px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #E8B98A; }
-      .meta   { font: 400 18px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #C9AE95; letter-spacing: 0.5px; }
-
-      .fade-in { opacity: 0; animation: fadeUp 0.9s ease-out forwards; }
-      .d1 { animation-delay: 0.1s; } .d2 { animation-delay: 0.35s; } .d3 { animation-delay: 0.6s; }
-      @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-
-      .r { opacity: 0; animation: rotate 12s infinite; }
-      .r1 { animation-delay: 0.8s; } .r2 { animation-delay: 4.8s; } .r3 { animation-delay: 8.8s; }
-      @keyframes rotate {
-        0%   { opacity: 0; transform: translateY(14px); }
-        5%   { opacity: 1; transform: translateY(0); }
-        28%  { opacity: 1; transform: translateY(0); }
-        33%  { opacity: 0; transform: translateY(-14px); }
-        100% { opacity: 0; transform: translateY(-14px); }
-      }
-      .cursor { animation: blink 1s steps(1) infinite; }
+      .mono  { font: 500 16px 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; fill: #8B949E; }
+      .name  { font: 700 54px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #F0F6FC; letter-spacing: -1px; }
+      .role  { font: 700 26px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: url(#accent); }
+      .meta  { font: 400 17px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #8B949E; }
+      .node  { font: 600 15px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #C9D1D9; }
+      .hub   { font: 700 14px 'SFMono-Regular', Menlo, Consolas, monospace; fill: #F0F6FC; letter-spacing: 1px; }
+      .caret { fill: #58A6FF; animation: blink 0.9s steps(1) infinite; }
       @keyframes blink { 50% { opacity: 0; } }
-
-      .steam { fill: none; stroke: #F8EDE1; stroke-width: 6; stroke-linecap: round; opacity: 0; animation: steam 3.6s ease-in-out infinite; }
-      .s2 { animation-delay: 1.2s; } .s3 { animation-delay: 2.4s; }
-      @keyframes steam {
-        0%   { opacity: 0; transform: translateY(14px); }
-        30%  { opacity: 0.55; }
-        100% { opacity: 0; transform: translateY(-34px); }
+      @keyframes win { 0% { opacity: 1; } 31% { opacity: 1; } 32% { opacity: 0; } 100% { opacity: 0; } }
+      .flow { stroke-dasharray: 6 14; animation: dash 1.2s linear infinite; opacity: 0.55; }
+      @keyframes dash { to { stroke-dashoffset: -40; } }
+      .pulse { transform-origin: 930px 160px; animation: pulse 2.4s ease-out infinite; }
+      @keyframes pulse { 0% { transform: scale(1); opacity: 0.5; } 100% { transform: scale(1.9); opacity: 0; } }
+      .in { opacity: 0; animation: in 0.8s ease-out forwards; }
+      .i1 { animation-delay: 0.05s; } .i2 { animation-delay: 0.25s; } .i3 { animation-delay: 0.45s; }
+      @keyframes in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+      
+      .clip0 { transform: scaleX(0); animation: type0 12.0s infinite; animation-delay: 0.0s; }
+      .car0  { transform: translateX(0); animation: move0 12.0s infinite; animation-delay: 0.0s; }
+      .win0  { opacity: 0; animation: win 12.0s infinite; animation-delay: 0.0s; }
+      @keyframes type0 {
+        0%    { transform: scaleX(0); animation-timing-function: steps(33, end); }
+        11%   { transform: scaleX(1); }
+        26%   { transform: scaleX(1); animation-timing-function: steps(33, end); }
+        31%   { transform: scaleX(0); }
+        100%  { transform: scaleX(0); }
       }
-
-      .float { animation: float 6s ease-in-out infinite; }
-      .f2 { animation-delay: 1.5s; } .f3 { animation-delay: 3s; } .f4 { animation-delay: 4.5s; }
-      @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-12px) rotate(12deg); } }
+      @keyframes move0 {
+        0%    { transform: translateX(0); animation-timing-function: steps(33, end); }
+        11%   { transform: translateX(429px); }
+        26%   { transform: translateX(429px); animation-timing-function: steps(33, end); }
+        31%   { transform: translateX(0); }
+        100%  { transform: translateX(0); }
+      }
+      .clip1 { transform: scaleX(0); animation: type1 12.0s infinite; animation-delay: 4.0s; }
+      .car1  { transform: translateX(0); animation: move1 12.0s infinite; animation-delay: 4.0s; }
+      .win1  { opacity: 0; animation: win 12.0s infinite; animation-delay: 4.0s; }
+      @keyframes type1 {
+        0%    { transform: scaleX(0); animation-timing-function: steps(26, end); }
+        11%   { transform: scaleX(1); }
+        26%   { transform: scaleX(1); animation-timing-function: steps(26, end); }
+        31%   { transform: scaleX(0); }
+        100%  { transform: scaleX(0); }
+      }
+      @keyframes move1 {
+        0%    { transform: translateX(0); animation-timing-function: steps(26, end); }
+        11%   { transform: translateX(336px); }
+        26%   { transform: translateX(336px); animation-timing-function: steps(26, end); }
+        31%   { transform: translateX(0); }
+        100%  { transform: translateX(0); }
+      }
+      .clip2 { transform: scaleX(0); animation: type2 12.0s infinite; animation-delay: 8.0s; }
+      .car2  { transform: translateX(0); animation: move2 12.0s infinite; animation-delay: 8.0s; }
+      .win2  { opacity: 0; animation: win 12.0s infinite; animation-delay: 8.0s; }
+      @keyframes type2 {
+        0%    { transform: scaleX(0); animation-timing-function: steps(32, end); }
+        11%   { transform: scaleX(1); }
+        26%   { transform: scaleX(1); animation-timing-function: steps(32, end); }
+        31%   { transform: scaleX(0); }
+        100%  { transform: scaleX(0); }
+      }
+      @keyframes move2 {
+        0%    { transform: translateX(0); animation-timing-function: steps(32, end); }
+        11%   { transform: translateX(379px); }
+        26%   { transform: translateX(379px); animation-timing-function: steps(32, end); }
+        31%   { transform: translateX(0); }
+        100%  { transform: translateX(0); }
+      }
     </style>
   </defs>
 
   <g clip-path="url(#frame)">
     <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#dots)"/>
     <rect width="1200" height="320" fill="url(#glow)"/>
+    <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="15.5" fill="none" stroke="#30363D" stroke-width="1.5"/>
 
-    <!-- floating beans -->
-    <g opacity="0.55">
-      <g transform="translate(700 62)"><g class="float"><use href="#bean"/></g></g>
-      <g transform="translate(1135 70) scale(0.8)"><g class="float f2"><use href="#bean"/></g></g>
-      <g transform="translate(1110 262) scale(1.1)"><g class="float f3"><use href="#bean"/></g></g>
-      <g transform="translate(735 268) scale(0.7)"><g class="float f4"><use href="#bean"/></g></g>
-      <g transform="translate(610 150) scale(0.6)"><g class="float f3"><use href="#bean"/></g></g>
+    <text x="64" y="84" class="mono in i1">~/omeraydin00</text>
+    <text x="62" y="148" class="name in i2">Ömer Faruk Aydın</text>
+    <g transform="translate(64 200)">
+    <clipPath id="c0"><rect class="clip0" x="0" y="-30" width="429" height="40"/></clipPath>
+    <text class="role" clip-path="url(#c0)">Software Engineer at Okkalı Kahve</text>
+    <g class="win0"><g class="car0"><rect class="caret" x="4" y="-24" width="3" height="30" rx="1"/></g></g>
+    <clipPath id="c1"><rect class="clip1" x="0" y="-30" width="336" height="40"/></clipPath>
+    <text class="role" clip-path="url(#c1)">Mobile · Web · IoT Systems</text>
+    <g class="win1"><g class="car1"><rect class="caret" x="4" y="-24" width="3" height="30" rx="1"/></g></g>
+    <clipPath id="c2"><rect class="clip2" x="0" y="-30" width="379" height="40"/></clipPath>
+    <text class="role" clip-path="url(#c2)">React Native · Next.js · Node.js</text>
+    <g class="win2"><g class="car2"><rect class="caret" x="4" y="-24" width="3" height="30" rx="1"/></g></g>
     </g>
+    <text x="64" y="256" class="meta in i3">Istanbul, Türkiye  ·  Building software from the app to the hardware</text>
 
-    <!-- text -->
-    <text x="72" y="92" class="hello fade-in d1">HI THERE, I'M</text>
-    <text x="70" y="156" class="name fade-in d2">Ömer Faruk Aydın</text>
-
-    <g transform="translate(72 206)">
-      <text class="role r r1">Software Engineer at Okkalı Kahve</text>
-      <text class="role r r2">Mobile · Web · IoT Systems</text>
-      <text class="role r r3">React Native · Next.js · Node.js</text>
+    <g>
+    <path d="M930 160 L770 70" stroke="#30363D" stroke-width="2"/>
+    <path d="M930 160 L770 70" class="flow" stroke="#58A6FF" stroke-width="2" style="animation-delay:0.0s"/>
+    <circle r="4" fill="#79C0FF">
+      <animateMotion dur="2.4s" begin="0.0s" repeatCount="indefinite" path="M930 160 L770 70" keyPoints="1;0" keyTimes="0;1" calcMode="linear"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="0.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="3" fill="#D2A8FF">
+      <animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M930 160 L770 70"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M930 160 L1090 70" stroke="#30363D" stroke-width="2"/>
+    <path d="M930 160 L1090 70" class="flow" stroke="#58A6FF" stroke-width="2" style="animation-delay:0.4s"/>
+    <circle r="4" fill="#79C0FF">
+      <animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite" path="M930 160 L1090 70" keyPoints="1;0" keyTimes="0;1" calcMode="linear"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="3" fill="#D2A8FF">
+      <animateMotion dur="2.4s" begin="2.0s" repeatCount="indefinite" path="M930 160 L1090 70"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M930 160 L930 262" stroke="#30363D" stroke-width="2"/>
+    <path d="M930 160 L930 262" class="flow" stroke="#58A6FF" stroke-width="2" style="animation-delay:0.8s"/>
+    <circle r="4" fill="#79C0FF">
+      <animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite" path="M930 160 L930 262" keyPoints="1;0" keyTimes="0;1" calcMode="linear"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="3" fill="#D2A8FF">
+      <animateMotion dur="2.4s" begin="2.8s" repeatCount="indefinite" path="M930 160 L930 262"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="2.8s" repeatCount="indefinite"/>
+    </circle>
     </g>
-    <rect x="72" y="222" width="56" height="4" rx="2" fill="#E8B98A" class="fade-in d3"/>
-    <text x="72" y="262" class="meta fade-in d3">Istanbul, Türkiye  ·  Building software from the app to the hardware</text>
-
-    <!-- coffee cup -->
-    <g transform="translate(905 108)">
-      <path class="steam"    d="M38 20 C 26 2, 50 -10, 38 -28"/>
-      <path class="steam s2" d="M78 18 C 66 0, 90 -12, 78 -30"/>
-      <path class="steam s3" d="M118 20 C 106 2, 130 -10, 118 -28"/>
-
-      <ellipse cx="80" cy="168" rx="128" ry="18" fill="#000" opacity="0.25"/>
-      <ellipse cx="80" cy="160" rx="120" ry="16" fill="#D9C2AA"/>
-      <ellipse cx="80" cy="156" rx="108" ry="12" fill="#F3E6D8"/>
-      <path d="M156 66 C 206 66, 206 128, 150 128" fill="none" stroke="#EFE0D0" stroke-width="16" stroke-linecap="round"/>
-      <path d="M0 40 L160 40 L148 128 C 144 150, 16 150, 12 128 Z" fill="url(#cup)"/>
-      <ellipse cx="80" cy="40" rx="80" ry="14" fill="#F8EDE1"/>
-      <ellipse cx="80" cy="42" rx="70" ry="10" fill="url(#coffee)"/>
-      <path d="M36 44 C 60 38, 100 38, 124 44" stroke="#C99A6E" stroke-width="2.5" fill="none" opacity="0.7" stroke-linecap="round"/>
+    <circle cx="930" cy="160" r="34" fill="#1F6FEB" class="pulse"/>
+    <circle cx="930" cy="160" r="34" fill="#0D1117" stroke="url(#accent)" stroke-width="2.5"/>
+    <text x="930" y="165" text-anchor="middle" class="hub">API</text>
+    
+    <g transform="translate(770 70)">
+      <rect x="-62" y="-30" width="124" height="60" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+      <g transform="translate(-40 0)" stroke="#58A6FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="-8" y="-13" width="16" height="26" rx="3"/><path d="M-2 8 L2 8"/></g>
+      <text x="-18" y="6" class="node">Mobile</text>
+    </g>
+    <g transform="translate(1090 70)">
+      <rect x="-62" y="-30" width="124" height="60" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+      <g transform="translate(-40 0)" stroke="#58A6FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="-12" y="-10" width="24" height="20" rx="3"/><path d="M-12 -4 L12 -4"/></g>
+      <text x="-18" y="6" class="node">Web</text>
+    </g>
+    <g transform="translate(930 262)">
+      <rect x="-62" y="-30" width="124" height="60" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+      <g transform="translate(-40 0)" stroke="#58A6FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="-9" y="-9" width="18" height="18" rx="2"/><path d="M-4 -13 V-9 M4 -13 V-9 M-4 9 V13 M4 9 V13 M-13 -4 H-9 M-13 4 H-9 M9 -4 H13 M9 4 H13"/></g>
+      <text x="-18" y="6" class="node">Hardware</text>
     </g>
   </g>
 </svg>
