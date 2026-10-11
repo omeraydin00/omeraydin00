@@ -1,4 +1,6 @@
-# Ömer Faruk Aydın
+<p align="center">
+  <img src="./assets/header.svg" alt="Ömer Faruk Aydın, Software Engineer" width="100%" />
+</p>
 
 Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and tools behind IoT coffee and tea machines, from the phone in your hand to the hardware on the factory floor.
 
@@ -41,3 +43,7 @@ Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and t
 TypeScript, JavaScript, Python, Kotlin, Dart, C# · React Native, Expo, Next.js, React, Node.js, Flutter · PostgreSQL, Firebase · Arduino, ESP32, NFC, USB serial
 
 B.Sc. Computer Engineering, Sakarya University
+
+<p align="center">
+  <img src="./assets/footer.svg" width="100%" alt="" />
+</p>
