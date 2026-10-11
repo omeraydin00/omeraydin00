@@ -45,5 +45,12 @@ TypeScript, JavaScript, Python, Kotlin, Dart, C# · React Native, Expo, Next.js,
 B.Sc. Computer Engineering, Sakarya University
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omeraydin00/omeraydin00/output/github-snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/omeraydin00/omeraydin00/output/github-snake.svg" alt="" width="100%" />
+  </picture>
+</p>
+
+<p align="center">
   <img src="./assets/footer.svg" width="100%" alt="" />
 </p>
