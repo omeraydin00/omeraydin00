@@ -23,9 +23,6 @@
       .meta  { font: 400 17px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #8B949E; }
       .node  { font: 600 15px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #C9D1D9; }
       .hub   { font: 700 14px 'SFMono-Regular', Menlo, Consolas, monospace; fill: #F0F6FC; letter-spacing: 1px; }
-      .now   { font: 600 13px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #C9D1D9; }
-      .live  { transform-origin: 223px 79px; animation: live 2s ease-out infinite; }
-      @keyframes live { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(2.6); opacity: 0; } }
       .caret { fill: #58A6FF; animation: blink 0.9s steps(1) infinite; }
       @keyframes blink { 50% { opacity: 0; } }
       @keyframes win { 0% { opacity: 1; } 31% { opacity: 1; } 32% { opacity: 0; } 100% { opacity: 0; } }
@@ -98,12 +95,6 @@
     <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="15.5" fill="none" stroke="#30363D" stroke-width="1.5"/>
 
     <text x="64" y="84" class="mono in i1">~/omeraydin00</text>
-    <g class="in i1">
-      <rect x="208" y="66" width="192" height="26" rx="13" fill="#0F2D1A" stroke="#238636" stroke-width="1"/>
-      <circle cx="223" cy="79" r="4" fill="#3FB950" class="live"/>
-      <circle cx="223" cy="79" r="4" fill="#3FB950"/>
-      <text x="235" y="83.5" class="now">Working at Okkalı Kahve</text>
-    </g>
     <text x="62" y="148" class="name in i2">Ömer Faruk Aydın</text>
     <g transform="translate(64 200)">
     <clipPath id="c0"><rect class="clip0" x="0" y="-30" width="429" height="40"/></clipPath>
