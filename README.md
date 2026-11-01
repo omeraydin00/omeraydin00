@@ -27,6 +27,11 @@ Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and t
   </tr>
 </table>
 
+## Open source
+
+- [**react-native-nfc-manager**](https://github.com/revtel/react-native-nfc-manager/pull/858): `getNfcAntennaInfo()`, the NFC antenna position on Android 14+, so an app can show where to hold the card. Shipped in v4.1.0
+- [**react-native-bluetooth-classic**](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/372): Android 14 receiver flags, and `pairDevice` rejecting when pairing fails. In review
+
 ## Side projects
 
 - [**PolicyGPT**](https://github.com/omeraydin00/PolicyGPT): turns long government documents into step-by-step answers. Python, LangChain, Ollama
