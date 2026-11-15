@@ -10,14 +10,21 @@ Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and t
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <img src="./assets/okkali-app.jpg" alt="Okkalı Kahve app" />
       <p><b>Okkalı Kahve App</b><br/>
       The app people use to pay at the machines: QR payment, an in-app wallet, loyalty points, NFC cards and drink stats.<br/>
       React Native · Expo · TypeScript<br/>
       <a href="https://apps.apple.com/tr/app/okkal%C4%B1-kahve/id6760692481">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.bayineriot.okkalikahve">Google Play</a></p>
     </td>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
+      <img src="./assets/okkali-kurumsal.jpg" alt="Okkalı Kahve Kurumsal app" />
+      <p><b>Okkalı Kahve Kurumsal</b><br/>
+      The app for the companies, dealers and machine attendants who run the machines: live machine status, consumption and quotas.<br/>
+      React Native · Expo · TypeScript<br/>
+      <a href="https://apps.apple.com/tr/app/okkal%C4%B1-kahve-kurumsal/id6755045436">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.bayineriot.okkalikahvekurumsal">Google Play</a></p>
+    </td>
+    <td width="33%" valign="top">
       <img src="./assets/okkali-web.jpg" alt="okkalikahve.com.tr" />
       <p><b>okkalikahve.com.tr</b><br/>
       The company's website in Turkish and English, with a machine catalog, product pages and a quote form.<br/>
@@ -30,7 +37,8 @@ Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and t
 ## Open source
 
 - [**react-native-nfc-manager**](https://github.com/revtel/react-native-nfc-manager/pull/858): `getNfcAntennaInfo()`, the NFC antenna position on Android 14+, so an app can show where to hold the card. Shipped in v4.1.0
-- [**react-native-bluetooth-classic**](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/372): Android 14 receiver flags, and `pairDevice` rejecting when pairing fails. In review
+- **react-native-bluetooth-classic**: Android 14 receiver flags ([#372](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/372)), and `pairDevice` rejecting when pairing fails ([#374](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/374)). In review
+- [**expo-camera**](https://github.com/expo/expo/pull/52743): an `external` camera type, so an app can open a USB camera on Android. In review
 
 ## Side projects
 
