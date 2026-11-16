@@ -1,15 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" role="img" aria-label="">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="24" viewBox="0 0 1600 24" role="img" aria-label="">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#58A6FF" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#58A6FF"/>
-      <stop offset="1" stop-color="#BC8CFF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
+    <mask id="m"><rect x="0" y="10" width="420" height="4" rx="2" fill="url(#g)"/></mask>
     <style>
       .sweep { animation: sweep 6s ease-in-out infinite; }
-      @keyframes sweep { 0% { transform: translateX(-320px); } 100% { transform: translateX(1200px); } }
+      @keyframes sweep { 0% { transform: translateX(-420px); } 100% { transform: translateX(1600px); } }
+      .c { fill: #E0A068; animation: c 12s infinite; }
+      @keyframes c { 0%, 30% { fill: #E0A068; } 33.3%, 63.3% { fill: #70A8E8; } 66.7%, 96.7% { fill: #F0705C; } 100% { fill: #E0A068; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
     </style>
   </defs>
-  <rect x="0" y="11" width="1200" height="2" rx="1" fill="#30363D"/>
-  <g class="sweep"><rect x="0" y="10" width="320" height="4" rx="2" fill="url(#g)"/></g>
+  <rect x="0" y="11" width="1600" height="2" rx="1" fill="#30363D"/>
+  <g class="sweep"><rect class="c" x="0" y="10" width="420" height="4" mask="url(#m)"/></g>
 </svg>

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/header.svg" alt="Ömer Faruk Aydın, Software Engineer" width="100%" />
+  <img src="./assets/header.svg" alt="Ömer Faruk Aydın, software engineer. Software that runs in the real world." width="100%" />
 </p>
 
 Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and tools behind IoT coffee and tea machines, from the phone in your hand to the hardware on the factory floor.
