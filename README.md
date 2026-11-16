@@ -37,8 +37,8 @@ Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and t
 ## Open source
 
 - [**react-native-nfc-manager**](https://github.com/revtel/react-native-nfc-manager/pull/858): `getNfcAntennaInfo()`, the NFC antenna position on Android 14+, so an app can show where to hold the card. Shipped in v4.1.0
-- **react-native-bluetooth-classic**: Android 14 receiver flags ([#372](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/372)), and `pairDevice` rejecting when pairing fails ([#374](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/374)). In review
-- [**expo-camera**](https://github.com/expo/expo/pull/52743): an `external` camera type, so an app can open a USB camera on Android. In review
+- **react-native-bluetooth-classic**: Android 14 receiver flags ([#372](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/372)), and `pairDevice` rejecting when pairing fails ([#374](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/374)). Open PRs
+- [**expo-camera**](https://github.com/expo/expo/pull/52743): an `external` camera type, so an app can open a USB camera on Android. Open PR
 
 ## Side projects
 
