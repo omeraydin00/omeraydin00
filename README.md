@@ -47,6 +47,7 @@ Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and t
 
 | Project | What it does | Stack |
 |---|---|---|
+| [**expo-serial-port**](https://github.com/omeraydin00/expo-serial-port) | Serial ports for Expo on Android: board UARTs and USB-serial adapters, published on [npm](https://www.npmjs.com/package/@omeraydin00/expo-serial-port) | Kotlin, C, TypeScript |
 | [**PolicyGPT**](https://github.com/omeraydin00/PolicyGPT) | Turns long government documents into step-by-step answers | Python, LangChain, Ollama |
 | [**VoiceGPT**](https://github.com/omeraydin00/VoiceGPT) | A Turkish voice assistant that answers out loud | Whisper, Llama 3, Gradio |
 | [**Customer Support Agent**](https://github.com/omeraydin00/customer-support-agent) | Sorts customer messages and drafts replies | Python, Ollama, Streamlit |
