@@ -36,26 +36,35 @@ Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and t
 
 ## Open source
 
-- [**react-native-nfc-manager**](https://github.com/revtel/react-native-nfc-manager/pull/858): `getNfcAntennaInfo()`, the NFC antenna position on Android 14+, so an app can show where to hold the card. Shipped in v4.1.0
-- **react-native-bluetooth-classic**: Android 14 receiver flags ([#372](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/372)), and `pairDevice` rejecting when pairing fails ([#374](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/374)). Open PRs
-- [**expo-camera**](https://github.com/expo/expo/pull/52743): an `external` camera type, so an app can open a USB camera on Android. Open PR
+| Project | Contribution | Status |
+|---|---|---|
+| **react-native-nfc-manager** | `getNfcAntennaInfo()`: the NFC antenna position on Android 14+, so an app can show where to hold the card | Merged in [#858](https://github.com/revtel/react-native-nfc-manager/pull/858), shipped in v4.1.0 |
+| **react-native-bluetooth-classic** | Android 14 receiver flags, and `pairDevice` rejecting when pairing fails | Open: [#372](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/372), [#374](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/374) |
+| **expo-camera** | An `external` camera type, so an app can open a USB camera on Android | Open: [#52743](https://github.com/expo/expo/pull/52743) |
+| **react-native-ble-manager** | If `start()` fails on Android, it rejects and cleans up, so the next call starts again | Open: [#1461](https://github.com/innoveit/react-native-ble-manager/pull/1461) |
 
 ## Side projects
 
-- [**PolicyGPT**](https://github.com/omeraydin00/PolicyGPT): turns long government documents into step-by-step answers. Python, LangChain, Ollama
-- [**VoiceGPT**](https://github.com/omeraydin00/VoiceGPT): a Turkish voice assistant that answers out loud. Whisper, Llama 3, Gradio
-- [**Customer Support Agent**](https://github.com/omeraydin00/customer-support-agent): sorts customer messages and drafts replies. Python, Ollama, Streamlit
-- [**Ollama-Agent-Kit**](https://github.com/EmreMutlu99/Ollama-Agent-Kit): an agent with memory and tool calling, from my internship at Sagel AI. Node.js, Ollama
-- [**Farmer Market**](https://github.com/omeraydin00/farmer_market): a marketplace app for farmers and customers. Flutter, Firebase
-- [**Riot Quiz**](https://github.com/omeraydin00/riotappv2): a League of Legends quiz game. Flutter
-- [**Gym Management and Booking System**](https://github.com/omeraydin00/web-programlama-proje): branches, trainers and bookings. ASP.NET Core, PostgreSQL
-- [**Cat Hospital**](https://github.com/omeraydin00/DatabaseManagmentSystems-Kedi_Hastanesi): a clinic system on a full PostgreSQL schema. Node.js, PostgreSQL
+| Project | What it does | Stack |
+|---|---|---|
+| [**PolicyGPT**](https://github.com/omeraydin00/PolicyGPT) | Turns long government documents into step-by-step answers | Python, LangChain, Ollama |
+| [**VoiceGPT**](https://github.com/omeraydin00/VoiceGPT) | A Turkish voice assistant that answers out loud | Whisper, Llama 3, Gradio |
+| [**Customer Support Agent**](https://github.com/omeraydin00/customer-support-agent) | Sorts customer messages and drafts replies | Python, Ollama, Streamlit |
+| [**Ollama-Agent-Kit**](https://github.com/EmreMutlu99/Ollama-Agent-Kit) | An agent with memory and tool calling, from my internship at Sagel AI | Node.js, Ollama |
+| [**Farmer Market**](https://github.com/omeraydin00/farmer_market) | A marketplace app for farmers and customers | Flutter, Firebase |
+| [**Riot Quiz**](https://github.com/omeraydin00/riotappv2) | A League of Legends quiz game | Flutter |
+| [**Gym Management**](https://github.com/omeraydin00/web-programlama-proje) | Branches, trainers and bookings for a gym chain | ASP.NET Core, PostgreSQL |
+| [**Cat Hospital**](https://github.com/omeraydin00/DatabaseManagmentSystems-Kedi_Hastanesi) | A clinic system on a full PostgreSQL schema | Node.js, PostgreSQL |
 
 ## Tools
 
-TypeScript, JavaScript, Python, Kotlin, Dart, C# · React Native, Expo, Next.js, React, Node.js, Flutter · PostgreSQL, Firebase · Arduino, ESP32, NFC, USB serial
-
-B.Sc. Computer Engineering, Sakarya University
+<table>
+  <tr><td><b>Languages</b></td><td>TypeScript, JavaScript, Python, Kotlin, Dart, C#</td></tr>
+  <tr><td><b>Frameworks</b></td><td>React Native, Expo, Next.js, React, Node.js, Flutter</td></tr>
+  <tr><td><b>Data</b></td><td>PostgreSQL, Firebase</td></tr>
+  <tr><td><b>Hardware</b></td><td>Arduino, ESP32, NFC, USB serial</td></tr>
+  <tr><td><b>Education</b></td><td>B.Sc. Computer Engineering, Sakarya University</td></tr>
+</table>
 
 <p align="center">
   <img src="./assets/footer.svg" width="100%" alt="" />
