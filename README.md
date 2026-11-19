@@ -40,8 +40,8 @@ Software engineer at Okkalı Kahve in Istanbul. I build the apps, websites and t
 |---|---|---|
 | **react-native-nfc-manager** | `getNfcAntennaInfo()`: the NFC antenna position on Android 14+, so an app can show where to hold the card | Merged in [#858](https://github.com/revtel/react-native-nfc-manager/pull/858), shipped in v4.1.0 |
 | **react-native-bluetooth-classic** | Android 14 receiver flags, and `pairDevice` rejecting when pairing fails | Merged in [#372](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/372) and [#374](https://github.com/kenjdavidson/react-native-bluetooth-classic/pull/374) |
-| **expo-camera** | An `external` camera type, so an app can open a USB camera on Android | Open: [#52743](https://github.com/expo/expo/pull/52743) |
-| **react-native-ble-manager** | If `start()` fails on Android, it rejects and cleans up, so the next call starts again | Open: [#1461](https://github.com/innoveit/react-native-ble-manager/pull/1461) |
+| **react-native-ble-manager** | If `start()` fails on Android, it rejects and cleans up, so the next call starts again | Merged in [#1461](https://github.com/innoveit/react-native-ble-manager/pull/1461) |
+| **expo-camera** | An `external` camera type, so an app can open a USB camera on Android | Approved: [#52743](https://github.com/expo/expo/pull/52743) |
 
 ## Side projects
 
